@@ -4,14 +4,16 @@
     <title>Main</title>
     <link rel="stylesheet" type="text/css" href="/styles.css">
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 180vh;
         }
         
         nav {
@@ -39,10 +41,10 @@
 
         .main_slider {
             position: relative;
-            top: 100px;
+            top: 0px;
             left: 0px;
             width: 100%;
-            height: 100vh;
+            height: 70vh;
             display: block;
             background-position: center;
             background-size: cover;
@@ -53,16 +55,59 @@
             background-color: rgb(255, 255, 255);
             overflow: hidden;
         }
+
+        .main_slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* tryig out */
+        /* .fullscreen {
+            width: 100%;
+            height: 100vh; 
+            color: white;
+            padding: 40vh
+        }
+
+        .one {
+            background: url('APP_TRY/ourcoffee_pic.png') center/cover;
+        } */
+        
+        .coffeexgiftcard {
+            width: 100%;
+            padding: 10px;
+            position: relative;
+            padding-top: r0px;
+            padding-bottom: 300px;
+            margin: 0 auto; 
+            overflow-y: hidden; 
+        }
+
+        .coffeexgiftcard img {
+            height: auto;
+            width: 100%;
+            display: block;
+        }
+
+        
     </style>
 </head>
 <body>
     <nav>
-        <a href="#">Home</a>
+        <a href="main.html">Home</a>
         <a href="login.html">Login</a>
-        <a href="#">About us</a>
+        <a href="about.html">About us</a>
         <a href="#">Our offers</a>
     </nav>
-    <div class="main_slider" style="background-image: url('coffee_slider1.png');">
+    <!-- <div class="fullscreen one">
+        <img src="coffee_slider1.png">
+    </div> -->
+    <div class="main_slider">
+        <img src="coffee_slider1.png" alt="Coffee Slider">
+    </div>
+    <div class="coffeexgiftcard">
+        <img src="resized_graphic.png" alt="Our coffee better image">
     </div>
 </body>
 </html>

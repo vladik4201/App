@@ -16,13 +16,13 @@ app.get('/', (req, res) => { //when requests comes to root path (/) , call back 
     res.sendFile(__dirname + '/main.html'); //res.send function in Express.js terminate the response once called
 });
 
-//Another route located in //localhost:3006/login
+//Another route located in //localhost:3007/login
 app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/login.html');
 });
 
 app.get('/about', (req, res) => {
-    res.send("About Us Page");
+    res.sendFile(__dirname + '/about.html');
 });
 
 // app.get('/auth', (req, rest) => {
